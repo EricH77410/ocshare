@@ -1,0 +1,15 @@
+<template name="ArticleListe">
+    <h3>Liste des articles</h3>
+    <div class="container">
+        <ul class="nav nav-pills nav-stacked">
+            {{#each articles}}
+                {{> oneArticle}}
+            {{/each}}
+        </ul>
+    </div>
+</template>
+
+<template name="oneArticle">
+    <h3>{{title}}</h3>
+    <p>{{content}}</p>
+</template>

@@ -1,0 +1,17 @@
+<template name="Categories">
+    <h3>Catégories</h3>
+    {{> quickForm collection="Category" id="insertCategory" type="insert"}}
+    <hr/>
+    <div class="container">
+        {{> CategoiesList}}
+    </div>
+</template>
+
+<template name="CategoiesList">
+    <ul class="nav nav-pills nav-stacked">
+
+        {{#each categories}}
+            <li>{{name}}</li>
+        {{/each}}
+    </ul>
+</template>
