@@ -12,6 +12,6 @@ Template.Login.events({
            if (err){
                alert(err.reason);
            }
-       })
+       });
    }
 });
